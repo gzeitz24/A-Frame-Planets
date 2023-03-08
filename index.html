@@ -29,9 +29,10 @@
 <img id="Pluto" src="assets/Pluto.jpeg">
 		</a-assets>
 <!-- Camera -->
-<a-entity position="35 30 35">
-<a-camera></a-camera>
-</a-entity>
+<a-entity id="rig" movement-controls="fly: true; speed: 0.8">
+            <a-entity camera position="0 10 32" look-controls>
+            </a-entity>
+        </a-entity>
 
 <!-- Sun -->
 <a-sphere src="#Sun" position="0 0 0"
